@@ -1,0 +1,29 @@
+.done{
+    color:green;
+}
+.active{
+    color: red;
+}
+.to-do-item{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    transition: all .5s ease;
+    animation-duration: 1s;
+    animation-name: scale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes scale{
+    from{
+        transform: scale(.3);
+        opacity: .3;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
